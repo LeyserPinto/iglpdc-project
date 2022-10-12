@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import { ScrollRestoration } from 'react-router-dom';
 import { Navbar,SideBar } from '../components/navbar/navbars'
-
+import Spiner from '../components/spiner/spiner'
 import { TeamTemplate } from '../components/teams/teams';
 const TeamPage = () => {
 

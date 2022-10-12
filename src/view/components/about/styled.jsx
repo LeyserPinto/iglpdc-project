@@ -17,6 +17,7 @@ display:grid;
 grid-template-columns:repeat(2,50%);
 grid-template-rows:auto;
 gap:20px;
+overflow:hidden;
 
 &> .imgSection{
     background:url(${aboutimg});

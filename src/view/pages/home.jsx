@@ -10,6 +10,7 @@ import {TeamsSection} from '../components/teams/teams'
 
 import '../styles/App.css'
 import Spiner from '../components/spiner/spiner'
+import HomeContact from '../components/contact/01-contact'
 
 
 
@@ -60,8 +61,7 @@ const Home = () => {
     <AboutUs />
     <Donate />
     <TeamsSection haveError={haveError}/>
-    <HomeContent haveError={haveError} />
-    
+    <HomeContact />
     <ScrollRestoration />
     </>
   )

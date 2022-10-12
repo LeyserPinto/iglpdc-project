@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from "framer-motion";
 import Video from "../../assets/videos/Clouds.mp4"
 import { Container,HeroBg,VideoLoop, HeroContent,HeroImg,HeroP,HeroSocial } from './styled'
 import { FaFacebookF, FaYoutube, FaWhatsapp,FaTiktok,FaInstagram } from "react-icons/fa";
@@ -13,10 +12,8 @@ const Hero = () => {
             <VideoLoop src={Video} autoPlay loop muted type="video/mp4"/>
         </HeroBg>
         <HeroContent>
-          <HeroImg src={Logo} as={motion.img} initial={{y:-500}} animate={{ y: 0 }} transition={{ type: "spring" }}/>
-          <HeroP as={motion.p} animate={{ opacity: 1, y:0 }}
-                transition={{type: "spring"}}
-                initial={{ opacity: 0, y:-100 }}>
+          <HeroImg src={Logo} />
+          <HeroP >
                 Adora en Espiritu y Verdad Junto a Nosotros</HeroP>
         </HeroContent>
 

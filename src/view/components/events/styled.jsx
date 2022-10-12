@@ -22,6 +22,7 @@ export const EventsBox = styled.div`
   padding: 10px;
   display:flex;
   align-items:center;
+  overflow:hidden;
 `;
 
 

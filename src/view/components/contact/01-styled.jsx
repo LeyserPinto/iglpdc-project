@@ -9,6 +9,11 @@ background-position:center;
 background-attachment:fixed;
 margin-bottom:50px;
 padding:50px 0px;
+position:relative;
+@media screen and (max-width:800px){  
+    
+height:120vh;
+}
 `
 export const Ccontent=styled.div`
 margin:0 auto;
@@ -25,12 +30,17 @@ grid-template-columns:30% auto;
     display:flex;
     align-items:center;
 }
+@media screen and (max-width:800px){
+    
+grid-template-rows:40% auto;
+grid-template-columns:1fr;
+}
 `
 
 
 export const ContactCard=styled.div`
 margin: 0 auto;
-width:calc(100% - 60px);
+width:100%;
 height:calc(100% - 10px);
 background-color:#FFF;
 display:flex;
@@ -75,6 +85,10 @@ animation: spring-1 infinite  3s linear ;
     }
 }
 
+
+@media screen and (max-width:800px){    
+    width:250px;
+}
 `
 
 export const ContactText=styled.div`
@@ -127,4 +141,13 @@ justify-content:center;
     }
 
 }
+`
+
+export const Cwave=styled.img`
+width:100%;
+height:150px;
+object-fit:cover;
+object-position:center 60%;
+position:absolute;
+bottom:0%;
 `

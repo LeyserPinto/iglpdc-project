@@ -1,6 +1,8 @@
 import React from 'react'
-import { CContainer,Ccontent,ContactCard,ContactText } from "../contact/01-styled";
+import { CContainer,Ccontent,ContactCard,ContactText,Cwave } from "../contact/01-styled";
 import Bg from '../../assets/images/iglesia.webp'
+import Wave from '../../assets/images/wave.svg'
+
 import { GiBugleCall } from "react-icons/gi";
 const HomeContact = () => {
   return (
@@ -25,6 +27,7 @@ const HomeContact = () => {
                </ContactText>
            </section>
         </Ccontent> 
+        <Cwave src={Wave}></Cwave>
     </CContainer>
     </>
   )
